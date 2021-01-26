@@ -1,13 +1,6 @@
 class Carousel {
 
     /**
-      * This callback type is called `requestCallback` and is displayed as a global symbol.
-      *
-      * @callback moveCallback
-      * @param {number} index
-      */
-
-    /**
      * @param {HTMLElement} element
      * @param {Object} options
      * @param {Object} [options.slidesToScroll=1] Nombre d'éléments à faire défiler
@@ -68,7 +61,7 @@ class Carousel {
         })
     }
     /**
-     * Applique les bonnes dimensions aux éelements du carousel (aux items)
+     * Applique les bonnes dimensions aux élements du carousel (aux items)
      */
     setStyle (){
         let ratio = this.items.length / this.slidesVisible
@@ -191,7 +184,6 @@ class Carousel {
         return div
     }
 
-    //un geter c'est quoi ?
     /**
      * @returns {number}
      */
@@ -228,5 +220,4 @@ if (document.readyState !== 'loading') {
     onReady()
 }
 document.addEventListener('DOMContentLoaded', onReady)
-
 
